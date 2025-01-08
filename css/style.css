@@ -1,0 +1,156 @@
+:root{
+    --black: rgb(0,0,0);
+    --darkblue: rgb(40, 2, 116);
+    --orange: rgb(254, 122, 54);
+}
+body ,h2 {
+    margin: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.landing #logo {
+    font-size: 3em;
+}
+.landing {
+    background-image: url('../media/bgpic.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+header a{
+    text-decoration: none;
+    color: var(--darkblue);
+    min-width: 120px;
+    
+
+}
+header {
+    display: flex;
+    padding: 1em;
+    flex-wrap: wrap;
+}
+
+#logo {
+ flex:3;
+ font-size: 1.25em;
+
+}
+nav {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    min-width: 260px;
+
+}
+nav a{
+    flex: 1;
+}
+nav a:hover{
+    color: var(--black);
+
+}
+header h2 i,nav a i {
+    margin-right: .5em;
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height:50vh;
+    justify-content: center;
+    padding: 2em;
+
+}
+.tagline1{
+    color: var(--orange);
+    font-size: 2.5em;
+    word-spacing: 10px;
+    letter-spacing: 0.5px;
+
+}
+.tagline2 {
+    color: var(--black);
+    font-weight: bolder;
+    word-spacing: 0.1em;
+    letter-spacing: 0.1em;
+
+}
+.tagline3{
+    color: var(--black);
+    font-weight: bolder;
+    word-spacing: 0.1em;
+    letter-spacing: 0.1em;
+    
+}
+.maintext div {
+    margin-top: .75em;
+}
+.maintext button{
+    width: 20vw;
+    margin-top: 0.75em;
+    border-radius: 20px;
+    padding: 0.7em;
+    background-color: var(--black);
+    color: white;
+    font-weight: bolder;
+    border: 1px solid --black;
+
+}
+#menuheading,#locheading
+    {
+        background-color: black;
+        color: aliceblue;
+        font-size: 2.5em;
+        letter-spacing:.2em;
+        display: flex;
+        justify-content: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+.menu {
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(284px,1fr));
+    background-color: black;
+    color: aliceblue;
+    letter-spacing:0.2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.menu th{
+    font-size: 1.5em;
+}
+table{
+    width: 100%;
+    padding: 1em;
+}
+.menu tr {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.8em;
+}
+.menu td:nth-child(1) {
+    flex: 1;
+    justify-self: left;
+
+}
+.menu td:nth-child(2) {
+    justify-self: right;
+}
+.maincourse {
+    -ms-grid-row-span: 2;
+}
+.locations{
+    display: flex;
+    flex-wrap:wrap;
+    background-color: black;
+    color: white;
+    
+}
+.locations h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    margin-bottom: 0.8em;
+}
+.locations div {
+    flex: 1;
+    padding: 1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   min-width: 284px;
+
+}
